@@ -7,12 +7,38 @@
 
   <title>Functions, Arrays, Objects</title>
 
-  <script src="functions.js"></script>
-  <script src="arrays.js"></script>
-  <script src="objects.js"></script>
+  
 </head>
 
 <body>
 <h1>Functions, Arrays, Objects - Check your work in the console!</h1>
+<div id="container">
+  <div id="gameField">
+
+      <h1>ROCK PAPER SCISSORS</h1>
+      <h2>GET A COMFY CHAIR, RELAX<br>AND DESTROY THE COMPUTER</h2>
+      <h3>Score 5 to win the game!</h3>
+
+      <button onclick="startGame()" id="buttonRock" class="buttons">Rock</button>
+      <button onclick="startGame()" id="buttonPaper" class="buttons">Paper</button>
+      <button onclick="startGame()" id="buttonScissors" class="buttons">Scissors</button>
+      <button onclick="resetButton()" id="buttonReset" class="buttons">Reset</button>
+      <div id="resultBox"></div>
+      <p>Player Score:
+          <a id="playerClicks">0</a>
+      </p>
+
+      <p>Computer Score:
+          <a id="computerClicks">0</a>
+      </p><br>
+
+      <p id="winnerIs">And the winner is:<br>
+          <a id="whoWon"></a>
+      </p>
+  </div>
+</div>
+<script src="functions.js"></script>
+  <script src="arrays.js"></script>
+  <script src="objects.js"></script>
 </body>
 </html>

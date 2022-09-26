@@ -8,12 +8,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+// function multiply(a, b){  
+//     return a*b;
+//   }
+// console.log(multiply(2,3));
 
 
-/*
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: Age in Cat years 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -24,11 +24,13 @@ Do the following:
    2. Use the received value to calculate the age in cat years (1 human year is equal to 7 cat years)
    3. Return the newly calculated age
 */
+// let cat = 7;
+// let human = 1;
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
-}
-
+// function catYear(cat, human){
+//     return cat*human ;
+// }
+// console.log(catYear(7, 1));
 
 
 
@@ -37,31 +39,26 @@ function catYears(/*add your code here*/){
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 
-/*
 
-------------
-function myFunction() {
-console.log("Function was invoked!");
-};
 
-myFunction();
-----------------
+// const myFunction = () => {
+  
+// };
 
-let anotherFunction = function (param) {
-  return param;
-};
+// myFunction();
 
-anotherFunction("Example");
+// let anotherFunction = (param) =>{
+//   return param;
+// };
+// console.log(anotherFunction(4));
 
----------------
 
-let add = function (param1, param2) {
-  return param1 + param2;
-};
+// const add =  (param1, param2) => {
+//   return param1 + param2;
+// };
 
-add(1,2);
+// console.log(add(1,2));
 
-*/
 
 
 
@@ -83,9 +80,84 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
-}
+// function game(user, computer){
+//     /*add your code here*/
+// }
+// let playerScore = 0;
+// let computerScore = 0;
+// let playerWon = "Player";
+// let computerWon = "Computer";
+// document.getElementById("winnerIs").style.display = "none";
+
+// function startGame() {
+// document.getElementById("resultBox").innerHTML = playRound();
+// }  
+
+// function computerPlay() {
+// let computerChoice = ["rock", "paper", "scissors"]
+// return computerChoice[Math.floor(Math.random() * computerChoice.length)];
+// }
+
+// function playRound(playerSelection, computerSelection) {
+// let roundResult = "";
+// let computerChoice = computerPlay();
+
+// const buttonRock = document.querySelector('#buttonRock');
+// const buttonPaper = document.querySelector('#buttonPaper');
+// const buttonScissors = document.querySelector('#buttonScissors');
+
+// let playerChoiceRock = buttonRock;
+// let playerChoicePaper = buttonPaper;
+// let playerChoiceScissors = buttonScissors;
+
+// if (playerChoiceRock && computerChoice === "paper") {
+//     roundResult = "You've chosen ROCK and your enemy PAPER so you lose because PAPER beats ROCK";
+//     computerScore++;
+//     console.log("You've chosen ROCK and your enemy PAPER so you lose because PAPER beats ROCK");
+// } else if (playerChoiceRock && computerChoice === "scissors") {
+//     roundResult = "You've chosen ROCK and your enemy SCISSORS so you win because ROCK beats SCISSORS";
+//     playerScore++;
+//     console.log("You've chosen ROCK and your enemy SCISSORS so you win because ROCK beats SCISSORS");
+// } else if (playerChoiceRock && computerChoice === "rock") {
+//     roundResult = "You've chosen ROCK and your enemy ROCK so it's a tie!";
+//     console.log("You've chosen ROCK and your enemy ROCK so it's a tie!");
+
+// } else if (playerChoicePaper && computerChoice === "rock") {
+//     roundResult = "You've chosen PAPER and your enemy ROCK so you win because PAPER beats ROCK";
+//     console.log("You've chosen PAPER and your enemy ROCK so you win because PAPER beats ROCK");
+// } else if (playerChoicePaper && computerChoice === "paper") {
+//     roundResult = "You've chosen PAPER and your enemy PAPER so it's a tie!";
+//     console.log("You've chosen PAPER and your enemy PAPER so it's a tie!");
+// } else if (playerChoicePaper && computerChoice === "scissors") {
+//     roundResult = "You've chosen PAPER and your enemy SCISSORS so you lose because SCISSORS beats PAPER";
+//     console.log("You've chosen PAPER and your enemy SCISSORS so you lose because SCISSORS beats PAPER");
+
+// } else if (playerChoiceScissors && computerChoice === "rock") {
+//     roundResult = "You've chosen SCISSORS and your enemy ROCK so you lose because ROCK beats SCISSORS";
+//     console.log("You've chosen SCISSORS and your enemy ROCK so you lose because ROCK beats SCISSORS");
+// } else if (playerChoiceScissors && computerChoice === "paper") {
+//     roundResult = "You've chosen SCISSORS and your enemy PAPER so you win because SCISSORS beats PAPER";
+//     console.log("You've chosen SCISSORS and your enemy PAPER so you win because SCISSORS beats PAPER");
+// } else if (playerChoiceScissors && computerChoice === "scissors") {
+//     roundResult = "You've chosen SCISSORS and your enemy SCISSORS so it's a tie!";
+//     console.log("You've chosen SCISSORS and your enemy SCISSORS so it's a tie!");
+// }
+
+// document.getElementById("playerClicks").innerHTML = playerScore;
+// document.getElementById("computerClicks").innerHTML = computerScore;
+
+// return roundResult;
+// }
+
+// function resetButton() {
+// playerScore = 0;
+// computerScore = 0;
+// document.getElementById("resultBox").innerHTML = "";
+// document.getElementById("winnerIs").style.display = "none";
+// document.getElementById("playerClicks").innerHTML = playerScore;
+// document.getElementById("computerClicks").innerHTML = computerScore;
+// // document.getElementById("confetti-canvas").style.display = "none";
+// }
 
 
 
@@ -103,3 +175,16 @@ Using the annoyingSong function below do the following:
 function annoyingSong(/*add your code here*/){
         /*add your code here*/
   }
+//   let word = "bottles";
+//   let count = 99;
+//   while (count > 0) {
+//       console.log(count + " " + word + " of soda on the wall");
+//       console.log(count + " " + word + " of soda,");
+//       console.log("Take one down, pass it around,");
+//       count = count - 1;
+//       if (count > 0) {
+//           console.log(count + " " + word + " of soda on the wall.");
+//       } else {
+//           console.log("No more " + word + " of soda on the wall.");
+//       }
+//   }
